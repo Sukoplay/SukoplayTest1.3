@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/Twitch.css">
+</head>
+<body>
+
+    
+    <div class="plaf">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="red" stroke="#0060FF"  stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs" style="transform: rotate(90deg);"><path d="M21 9.5H3M21 4.5H3M21 14.5H3M21 19.5H3"/></svg>
+    </div>
+    <div class="MenuAvant">
+            
+        <div class="mm" >
+            <a href="twitch.html" >Twitch</a> 
+            <a href="#"  ">Mes projet</a> 
+            <a href="#" >A venir</a>
+         </div> 
+       
+        <p class="copyright">Tous droits réservés - Sukoplay 2021  &copy; </p>
+    </div>
+
+
+  
+
+
+<div class="twitchf">
+  <div class="ttwitch"style="border: #0060FF 3px solid;">
+       <script src= "https://player.twitch.tv/js/embed/v1.js" ></script>
+    <div id="Sukoplay"style="border: #0060FF 1px solid;"></div>
+    <script type="text/javascript">
+      var options = {
+        width: "800px",
+        height: "500",
+        channel: "Sukoplay",
+        position: "absolute",
+       // video: "<video ID>",
+       // collection: "<collection ID>",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com
+        parent: ["embed.example.com", "othersite.example.com"]
+      };
+      var player = new Twitch.Player("Sukoplay", options);
+      player.setVolume(0.5);
+    </script>
+  </div>
+   <div class="chat" >
+    <iframe src="https://www.twitch.tv/embed/Sukoplay/chat?parent=localhost&darkpopout"
+        height="507"
+        width="400"
+        style="border: #0060FF 3px solid;"
+        >
+    </iframe>  
+   </div> 
+</div>
+
+<div class="sukette">
+  <div></div>
+  <a href="https://www.youtube.com/channel/UCo6e1fUdYC2-8mBw381DUXg"><img class="imgUne" src="img/youtube.svg"  ></a>
+  <img class="imgDeux" src="img/instagram.svg">
+  <img class="imgTrois"src="img/twitter.svg">
+  <iframe style="margin-left: 13.5vh; margin-top: 2vh; border: #0060FF 4px solid;""
+    src="https://clips.twitch.tv/embed?clip=CuteVenomousGerbilTakeNRG&parent=localhost"
+    height="200"
+    width="300"
+    
+    allowfullscreen="true">
+  </iframe>
+</div>
+
+<script src="JS/Twitch.js"></script>
+</body>
+</html>
